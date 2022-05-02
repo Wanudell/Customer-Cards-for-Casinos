@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KUMARHANE</title>
+  </head>
+  <body>
+    <header><h1 class="para-container"><p><b>CASINO ROYALE</b></p></h1></header>
+    <div class="container">
+      <div class="signIn">
+        <div class="signInInput">
+          <i style="font-size: 100px;" class="fa-solid fa-heart"></i>
+          <table>
+            <tr>
+              <td><b>ADINIZ :</b></td>
+              <td><input id="txtName" type="text" placeholder="Adınız..." required /></td>
+            </tr>
+            <tr>
+              <td><b>SOYADINIZ :</b></td>
+              <td><input id="txtLastName" type="text" placeholder="Soyadınız..." required/></td>
+            </tr>
+            <tr>
+              <td><b>YAŞINIZ :</b></td>
+              <td><input id="txtAge" type="text" placeholder="Yaşınız..." required/></td>
+                          <tr>
+              <td>Eklemek İstedikleriniz ?</td>
+                <td>
+                  <textarea
+                    name=""
+                    id="txtDescription"
+                    cols="21"
+                    rows="10"
+                    placeholder="Kendinizi tanıtınız ..."
+                  ></textarea>
+                </td>
+            </tr>
+          </table>
+          <select id="txtGender">
+            <option value="-1">Seçiniz ...</option>
+            <option value="0">Erkek</option>
+            <option value="1">Kadın</option>
+          </select>
+          <button onclick="saveTemplate()">Kaydet</button>
+        </div>
+      </div>
+      <div class="showTime">
+    </div>
+    <footer>
+      <button onclick="removeUser()">Sil</button>
+    </footer>
+  </body>
+  <template id="cardSchemeTemplate">
+    <div class="cardScheme">
+        <div id="hearts">
+          <p>
+            <b id="arrayItem" style="margin-left: 2px;"></b>
+            <br>
+            <i class="fa-solid fa-heart"></i>
+          </p>
+        </div>
+        <div id="jackOfDiamonds">
+          <div><i class="fa-solid fa-user"></i></div>
+          <br>
+          <div class="contentDesign">
+            <table>
+              <tr>
+                <td>Adınız :</td>
+                <td id="firstName"></td>
+              </tr>
+              <br>
+              <tr>
+                <td>Soyadınız :</td>
+                <td id="lastName"></td>
+              </tr>
+              <br>
+              <tr>
+                <td>Yaşınız :</td>
+                <td id="age"></td>
+              </tr>
+              <tr>
+                <td>Cinsiyetiniz :</td>
+                <td id="gender"></td>
+              </tr>
+              <tr>
+                <td>Hakkınızda :</td>
+                <td id="description"></td>
+              </tr>
+            </table>
+          </div>
+          <input class="cb" type="checkbox" name="" id="">
+        </div>
+        <div id="hearts">
+          <p id="hearts2">
+            <i class="fa-solid fa-heart"></i>
+            <br />
+            <b id="arrayItem2" style="margin-right: 2px ;"></b>
+          </p>
+        </div>
+      </div>
+  </div>
+  </template>
+  <script src="main.js"></script>
+</html>
